@@ -1,0 +1,58 @@
+body {
+    background: rgb(16, 16, 20);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1{
+    color: white;
+}
+
+.content-container{
+    width: 100%;
+    height: auto;
+}
+
+.quarter-box{
+    width: 50%;
+    height: 40%;
+    float: left;
+}
+
+.quarter-box h1{
+    color: white;
+}
+
+.quarter-box p{
+    color: white;
+}
+
+
+.clock-to-seconds{
+    color: white;
+    font-size: 15em;
+}
+
+th {
+    margin: 0;
+    padding: 0;
+}
+
+#minutesToStart{
+    width: 50px;
+}
+
+#timeBehind {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+}
+
+#notesBox {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+}
