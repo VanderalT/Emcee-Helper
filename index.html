@@ -10,91 +10,30 @@
     </head>
     <body  onload="startTime()">
         <header>
-            <h1>Emcee Helper</h1>
+            <div class="header-textbox">
+                <h1>Emcee Helper</h1>
+            </div>
         </header>
         <div class="content-container">
-            <div class="quarter-box" id="clock" class="clock">
+            <div class="content-box" id="clock">
                 <h1>Time</h1>
                 <div class="clock-to-seconds" id="clockToSeconds"></div>
+                <h1>Schedule Time</h1>
+                <div class="clock-to-seconds" id="clockToSecondsPlusTime"></div>
             </div>
-            <div class="quarter-box" id="introduction">
+            <div class="content-box" id="introduction">
                 <div class="introduction-callouts">
                     <h1>Call outs</h1>
-                    <table>
-                        <tr>
-                            <th><p>Call Out</p></th>
-                            <th><p>Done</p></th>
-                        </tr>
-                        <tr>
-                            <td>
-                                <p>
-                                    Welcome everyone to Eutopia 2023! We have an amazing competition coming up for
-                                    you,<br>
-                                    the first team will be kicking things off in the next <input type="number" id="minutesToStart"> minutes!<br>
-                                    Good luck to all of the athletes competing today and welcome once again to Eutopia 2023!
-                                </p>
-                            </td>
-                            <td>
-                                <input type="checkbox">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <p>
-                                    If you haven't already make sure to check out our amazing range of merchandise at the pop up merch shop<br>
-                                    You can grab a new jumper for these winter months, a pretty bow or new gear to show off at the gym.<br>
-                                    There's something there for everyone. So make sure to go down to the pop up merch shop!
-                                </p>
-                            </td>
-                            <td>
-                                <input type="checkbox">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <p>
-                                    Want to share your performance with friends and family overseas or that can't make it to the competition?<br>
-                                    Just share the website www.vidzing.tv/cheerbrandz and they'll be able to purchase access to the livestream and be able to watch your teams do an amazing job performing live.<br>
-                                    Once againg that is Vidzing.tv, v-i-d-z-i-n-g dot t-v forward slash cheerbrandz!<br>
-                                    Vizing, streaming your way!
-                                </p>
-                            </td>
-                            <td>
-                                <input type="checkbox">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <p>
-                                    If you end up winning first place at Eutopia 2023, you will be eligible to purchase one of our champions jumpers!<br>
-                                    Just go up to the merch pop up shop with your 1st place medal and you'll be able to buy a champions jumper to celebrate your win!
-                                </p>
-                            </td>
-                            <td>
-                                <input type="checkbox">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <p>
-                                    Need to input Global Games bid information
-                                </p>
-                            </td>
-                            <td>
-                                <input type="checkbox">
-                            </td>
-                        </tr>
-                    </table>
                 </div>
             </div>
-            <div class="quarter-box" id="timeManager">
+            <div class="content-box" id="timeManager">
                 <h1>Time Manager</h1>
                 <p>Min Behind</p>
-                <input type="number" id="timeBehind">
+                <input type="number" id="minBehind" value="0">
                 <p>Sec Behing</p>
-                <input type="number" id="timeBehind">
+                <input type="number" id="secBehind" value="0">
             </div>
-            <div class="quarter-box" id="notes">
+            <div class="content-box" id="notes">
                 <h1>Notes</h1>
                 <textarea id="notesBox"></textarea>
             </div>

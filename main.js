@@ -6,6 +6,14 @@ function startTime() {
     m = checkTime(m);
     s = checkTime(s);
     document.getElementById('clockToSeconds').innerHTML = h + ":" + m + ":" + s;
+
+    let mInput = document.querySelector('#minBehind');
+    let sInput = document.querySelector('#secBehind');
+    let mNumber = parseFloat(mInput.value);
+    let sNumber = parseFloat(sInput.value);
+
+    document.getElementById('clockToSecondsPlusTime').innerHTML = h + ":" + (m - mNumber) + ":" + (s - sNumber);
+
     setTimeout(startTime, 1000);
 }
 
